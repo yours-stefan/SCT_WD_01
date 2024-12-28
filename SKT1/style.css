@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.full-page {
+    height: 100vh;
+    width: 100%;
+    background: blueviolet;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-page {
+    width: 90%;
+    max-width: 1266px;
+    height: 559px;
+    background: url(bg1.jpg) no-repeat center center/cover;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px 10px 0 0;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-family: sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: coral;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.col-1 {
+    flex-basis: 45%;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.main-heading {
+    color: coral;
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+.form input {
+    font-family: sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: white;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form input::placeholder {
+    color: lightgray;
+}
+
+.form button {
+    font-family: sans-serif;
+    width: 100%;
+    background: coral;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.form button:hover {
+    background: orangered;
+}
+
+.form .message {
+    font-size: 14px;
+    margin: 15px 0;
+    color: white;
+}
+
+.form .message a {
+    color: coral;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.form .message a:hover {
+    color: orangered;
+}
+
+label {
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+    display: block;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .sub-page {
+        height: auto;
+        padding: 20px;
+    }
+
+    .form-box {
+        max-width: 90%;
+    }
+
+    .navigation-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
